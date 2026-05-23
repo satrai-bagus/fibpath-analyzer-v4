@@ -1,0 +1,105 @@
+Trend,SQZMOM 1 Momentum,SQZMOM 1 Squeeze,SQZMOM 2 Momentum,SQZMOM 2 Squeeze,Bar 1,Bar 2,Raw Position,Final Position,Score,match_count,p_first_1.61_UP,p_first_1.61_DOWN,p_first_2.5_UP,p_first_2.5_DOWN,p_first_3.6_UP,p_first_3.6_DOWN,p_first_TIE_SAME_BAR,p_first_NO_HIT_48H
+Long,lime,Squeeze ON (black),lime,Squeeze ON (black),Green Bar Line 6,Green Bar Line 6,LONG,NO TRADE,5.0,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 5,LONG,LONG,6.0,2,0.5,0.5,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 4,SHORT,SHORT,-6.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Green Bar Line 1,Green Bar Line 5,LONG,LONG,1.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze OFF (gray),Green Bar Line 5,Green Bar Line 5,SHORT,SHORT,-4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze OFF (gray),red,Squeeze OFF (gray),Red Bar Line 4,Red Bar Line 6,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 3,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 5,Red Bar Line 2,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 1,Green Bar Line 6,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Red Bar Line 6,Red Bar Line 2,SHORT,SHORT,-6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Red Bar Line 4,Red Bar Line 6,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Red Bar Line 4,Red Bar Line 4,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Red Bar Line 2,Green Bar Line 4,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Green Bar Line 5,Green Bar Line 2,SHORT,SHORT,-4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,red,Squeeze ON (black),green,Squeeze ON (black),Red Bar Line 4,Red Bar Line 6,NO TRADE,NO TRADE,0.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Green Bar Line 4,Green Bar Line 1,SHORT,SHORT,-6.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Green Bar Line 2,Green Bar Line 6,SHORT,NO TRADE,-4.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Green Bar Line 2,Green Bar Line 1,SHORT,SHORT,-4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,lime,Squeeze ON (black),red,Squeeze ON (black),Green Bar Line 6,Red Bar Line 5,LONG,NO TRADE,1.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,lime,Squeeze ON (black),lime,Squeeze ON (black),Red Bar Line 4,Red Bar Line 1,SHORT,SHORT,-3.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,lime,Squeeze ON (black),green,Squeeze ON (black),Green Bar Line 6,Green Bar Line 4,LONG,LONG,1.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,green,Squeeze ON (black),green,Squeeze ON (black),Green Bar Line 5,Red Bar Line 1,SHORT,SHORT,-4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,green,Squeeze ON (black),green,Squeeze ON (black),Green Bar Line 4,Green Bar Line 5,SHORT,SHORT,-2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,red,Squeeze ON (black),red,Squeeze ON (black),Red Bar Line 5,Red Bar Line 4,NO TRADE,NO TRADE,0.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,red,Squeeze ON (black),red,Squeeze ON (black),Red Bar Line 5,Green Bar Line 3,NO TRADE,NO TRADE,0.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Green Bar Line 4,Red Bar Line 5,SHORT,NO TRADE,-3.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Green Bar Line 5,Red Bar Line 2,LONG,LONG,1.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Green Bar Line 5,Red Bar Line 4,NO TRADE,NO TRADE,0.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 1,SHORT,SHORT,-6.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 5,Red Bar Line 4,SHORT,NO TRADE,-5.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze ON (black),Green Bar Line 6,Red Bar Line 6,SHORT,SHORT,-2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze ON (black),Green Bar Line 4,Red Bar Line 1,SHORT,SHORT,-2.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 6,SHORT,SHORT,-6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Red Bar Line 5,Green Bar Line 1,SHORT,SHORT,-2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Red Bar Line 3,Red Bar Line 3,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Red Bar Line 3,Green Bar Line 4,SHORT,SHORT,-6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Red Bar Line 2,Green Bar Line 6,SHORT,NO TRADE,-2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 5,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 3,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 4,Green Bar Line 6,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Green Bar Line 6,Red Bar Line 1,SHORT,NO TRADE,-5.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),red,Squeeze OFF (gray),Green Bar Line 1,Green Bar Line 2,SHORT,SHORT,-2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),maroon,Squeeze OFF (gray),Red Bar Line 6,Red Bar Line 4,SHORT,NO TRADE,-6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Red Bar Line 4,NO TRADE,NO TRADE,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,red,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 5,Red Bar Line 6,SHORT,NO TRADE,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 6,Red Bar Line 1,SHORT,NO TRADE,-1.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 4,Red Bar Line 3,SHORT,SHORT,-4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 4,Red Bar Line 2,SHORT,NO TRADE,-3.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 3,Red Bar Line 1,SHORT,SHORT,-4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 2,Green Bar Line 4,SHORT,NO TRADE,-3.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Short,maroon,Squeeze ON (black),maroon,Squeeze ON (black),Red Bar Line 2,Green Bar Line 1,SHORT,SHORT,-6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,red,Squeeze ON (black),red,Squeeze ON (black),Green Bar Line 3,Red Bar Line 5,NO TRADE,NO TRADE,0.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Green Bar Line 2,Red Bar Line 3,LONG,LONG,4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Green Bar Line 3,Red Bar Line 6,LONG,LONG,4.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 5,Red Bar Line 4,LONG,LONG,3.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze ON (black),green,Squeeze OFF (gray),Green Bar Line 4,Red Bar Line 5,LONG,NO TRADE,4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 5,LONG,LONG,4.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 5,Red Bar Line 2,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 3,Red Bar Line 6,LONG,LONG,4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Red Bar Line 4,LONG,LONG,1.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Red Bar Line 2,SHORT,SHORT,-4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Red Bar Line 1,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 6,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 3,LONG,LONG,2.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 1,LONG,LONG,4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 5,Green Bar Line 1,LONG,LONG,4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze ON (black),green,Squeeze ON (black),Red Bar Line 6,Red Bar Line 3,LONG,LONG,2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 4,Red Bar Line 6,NO TRADE,NO TRADE,0.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 4,Red Bar Line 5,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 4,Red Bar Line 2,LONG,LONG,2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 4,Green Bar Line 5,NO TRADE,NO TRADE,0.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 4,Green Bar Line 2,LONG,LONG,4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 3,Red Bar Line 6,LONG,LONG,4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 2,Red Bar Line 6,LONG,LONG,4.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Red Bar Line 2,Green Bar Line 2,LONG,LONG,2.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 4,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze OFF (gray),green,Squeeze OFF (gray),Green Bar Line 5,Red Bar Line 4,NO TRADE,NO TRADE,0.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,green,Squeeze ON (black),green,Squeeze ON (black),Red Bar Line 3,Green Bar Line 4,LONG,LONG,4.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),green,Squeeze OFF (gray),Green Bar Line 5,Red Bar Line 3,LONG,LONG,4.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze ON (black),Green Bar Line 6,Green Bar Line 6,LONG,LONG,3.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 2,Red Bar Line 4,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze ON (black),Green Bar Line 3,Green Bar Line 6,LONG,NO TRADE,5.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze ON (black),Green Bar Line 3,Green Bar Line 6,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 3,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 6,Green Bar Line 1,LONG,LONG,2.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 5,Red Bar Line 4,LONG,LONG,5.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 5,Red Bar Line 2,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 4,Green Bar Line 3,LONG,NO TRADE,5.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 4,Green Bar Line 3,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 3,Green Bar Line 6,LONG,LONG,3.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 3,Green Bar Line 5,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Red Bar Line 2,Green Bar Line 6,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 2,Green Bar Line 5,LONG,NO TRADE,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 6,Red Bar Line 1,LONG,NO TRADE,2.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 6,Green Bar Line 2,LONG,NO TRADE,6.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 6,Green Bar Line 2,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 5,Red Bar Line 6,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 5,Red Bar Line 5,LONG,LONG,5.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 5,Red Bar Line 1,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 5,Green Bar Line 4,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 4,Red Bar Line 3,LONG,LONG,6.0,1,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 3,Green Bar Line 6,LONG,LONG,6.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Long,lime,Squeeze OFF (gray),lime,Squeeze OFF (gray),Green Bar Line 3,Green Bar Line 6,LONG,LONG,2.0,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Short,red,Squeeze ON (black),red,Squeeze ON (black),Red Bar Line 6,Red Bar Line 5,SHORT,SHORT,-2.0,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
