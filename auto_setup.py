@@ -15,8 +15,9 @@ from typing import Dict, Optional
 import pandas as pd
 
 
-# Lokasi sqzmom_export.py — naik 2 level dari folder v4 ke root project
-SQZMOM_EXPORT_PATH = Path(__file__).resolve().parents[2] / "sqzmom_export.py"
+# Lokasi sqzmom_export.py — di folder yang sama dengan auto_setup.py
+# (di-bundle bersama app supaya deployment Streamlit Cloud tetap jalan)
+SQZMOM_EXPORT_PATH = Path(__file__).resolve().parent / "sqzmom_export.py"
 
 
 def _yahoo_to_binance(ticker: str) -> str:
