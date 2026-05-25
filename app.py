@@ -4,7 +4,6 @@ from pathlib import Path
 from datetime import date
 
 from fib_pattern_engine_v4 import FibPatternEngineV4, train_and_save_model_v4
-from market_signal import compute_market_signal
 from auto_setup import fetch_setup
 
 # ============================
@@ -151,8 +150,9 @@ with st.form('input_form'):
 # SUBMIT FLOW
 # ============================
 if submitted:
-    # --- Step 1: auto-fetch Bar + SQZMOM ---
-    with st.spinner('📡 Fetch Bar 1/2 + SQZMOM 1/2 dari Binance...'):
+    # Auto-fetch SEMUA field dari Binance (Bar + SQZMOM + Score + Posisi + Last TR)
+    # supaya satu sumber data konsisten dengan dataset training.
+    with st.spinner('📡 Fetch setup lengkap dari Binance...'):
         setup_auto = fetch_setup(ticker_val, date_val, hour_val)
     if setup_auto.get('error'):
         st.error(f"⚠️ Auto-fetch gagal: {setup_auto['error']}")
@@ -168,19 +168,10 @@ if submitted:
     sqz2_val = setup_auto['SQZMOM 2 Value']
     close_val = setup_auto.get('_close')
 
-    # --- Step 2: auto-compute Score / TR / Position ---
-    with st.spinner('📡 Compute Score / Last TR / Position dari indikator...'):
-        market_result = compute_market_signal(
-            ticker=ticker_val, target_date=date_val, target_hour=hour_val,
-        )
-    if market_result.get('error'):
-        st.error(f"⚠️ {market_result['error']}")
-        st.stop()
-
-    score_val = market_result['score']
-    last_tr_val = market_result['last_tr']
-    raw_pos_val = market_result['raw_position']
-    fin_pos_val = market_result['final_position']
+    score_val = setup_auto['Score']
+    last_tr_val = setup_auto['Last TR']
+    raw_pos_val = setup_auto['Raw Position']
+    fin_pos_val = setup_auto['Final Position']
 
     # ============================
     # 🤖 AUTO-FETCH PANEL
@@ -220,14 +211,14 @@ if submitted:
 
     with st.expander('📋 Detail Indikator Market', expanded=False):
         d1, d2, d3, d4 = st.columns(4)
-        d1.metric('Last Close', f"{market_result.get('last_close', 0):.2f}")
-        d2.metric('RSI 14', f"{market_result.get('rsi_last', 0):.2f}")
-        d3.metric('ADX 14', f"{market_result.get('adx_last', 0):.2f}")
-        d4.metric('ATR 14', f"{market_result.get('atr_last', 0):.4f}")
-        d1.metric('EMA 21', f"{market_result.get('ema_fast_last', 0):.2f}")
-        d2.metric('EMA 50', f"{market_result.get('ema_slow_last', 0):.2f}")
-        d3.metric('MACD', f"{market_result.get('macd_last', 0):.4f}")
-        d4.metric('Filter', market_result.get('filter_reason', '-'))
+        d1.metric('Last Close', f"{setup_auto.get('last_close') or 0:.2f}")
+        d2.metric('RSI 14', f"{setup_auto.get('rsi_last') or 0:.2f}")
+        d3.metric('ADX 14', f"{setup_auto.get('adx_last') or 0:.2f}")
+        d4.metric('ATR 14', f"{setup_auto.get('atr_last') or 0:.4f}")
+        d1.metric('EMA 21', f"{setup_auto.get('ema_fast_last') or 0:.2f}")
+        d2.metric('EMA 50', f"{setup_auto.get('ema_slow_last') or 0:.2f}")
+        d3.metric('MACD', f"{setup_auto.get('macd_last') or 0:.4f}")
+        d4.metric('Filter', setup_auto.get('filter_reason', '-'))
 
     # ============================
     # 🔮 PREDICT

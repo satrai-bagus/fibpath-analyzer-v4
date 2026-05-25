@@ -1,7 +1,10 @@
 """
-Auto-fetch setup (Bar 1/2 + SQZMOM 1/2) untuk ticker+date+hour
-dengan menjalankan sqzmom_export.py sebagai subprocess lalu
-membaca xlsx hasilnya.
+Auto-fetch setup lengkap (Bar 1/2 + SQZMOM 1/2 + Score/Posisi/Last TR +
+indikator diagnostic) untuk ticker+date+hour. Menjalankan sqzmom_export.py
+sebagai subprocess lalu membaca xlsx hasilnya.
+
+Single source of truth = Binance, supaya match dengan dataset training
+(yang juga dibangun dari sqzmom_export.py).
 """
 from __future__ import annotations
 
@@ -87,21 +90,62 @@ def fetch_setup(
             return None
         return f"{c} Bar Line {int(z)}"
 
+    def _opt_float(row, col: str) -> Optional[float]:
+        if col not in row or pd.isna(row[col]):
+            return None
+        return float(row[col])
+
+    def _opt_str(row, col: str) -> Optional[str]:
+        if col not in row or pd.isna(row[col]):
+            return None
+        return str(row[col])
+
+    def _filter_reason(row) -> str:
+        # Sinkron dengan logika di sqzmom_export.py: ADX < 15 atau Last TR > 1.6 * ATR
+        reasons = []
+        adx = row.get("ADX 14")
+        atr = row.get("ATR 14")
+        last_tr = row.get("Last TR")
+        if adx is not None and not pd.isna(adx) and adx < 15:
+            reasons.append("ADX < 15")
+        if (atr is not None and not pd.isna(atr) and atr > 0
+                and last_tr is not None and not pd.isna(last_tr)
+                and last_tr > 1.6 * atr):
+            reasons.append("Last TR > 1.6 * ATR (spike)")
+        return "; ".join(reasons) if reasons else "-"
+
     setup = {
+        # Fitur engine — Bar + SQZMOM (sumber: Binance)
         "Bar 1": _bar_label(cur),
         "Bar 2": _bar_label(prev),
-        "SQZMOM 1 Value": float(cur["SQZMOM Value"]) if not pd.isna(cur["SQZMOM Value"]) else None,
-        "SQZMOM 1 Momentum": cur["Momentum Color"] if not pd.isna(cur["Momentum Color"]) else None,
-        "SQZMOM 1 Squeeze": cur["Squeeze Status"] if not pd.isna(cur["Squeeze Status"]) else None,
-        "SQZMOM 2 Value": float(prev["SQZMOM Value"]) if not pd.isna(prev["SQZMOM Value"]) else None,
-        "SQZMOM 2 Momentum": prev["Momentum Color"] if not pd.isna(prev["Momentum Color"]) else None,
-        "SQZMOM 2 Squeeze": prev["Squeeze Status"] if not pd.isna(prev["Squeeze Status"]) else None,
+        "SQZMOM 1 Value": _opt_float(cur, "SQZMOM Value"),
+        "SQZMOM 1 Momentum": _opt_str(cur, "Momentum Color"),
+        "SQZMOM 1 Squeeze": _opt_str(cur, "Squeeze Status"),
+        "SQZMOM 2 Value": _opt_float(prev, "SQZMOM Value"),
+        "SQZMOM 2 Momentum": _opt_str(prev, "Momentum Color"),
+        "SQZMOM 2 Squeeze": _opt_str(prev, "Squeeze Status"),
+        # Score / posisi (Binance, uppercase — match dataset training)
+        "Score": int(cur["Score"]) if not pd.isna(cur["Score"]) else None,
+        "Last TR": _opt_float(cur, "Last TR"),
+        "Raw Position": _opt_str(cur, "Raw Posisi"),
+        "Final Position": _opt_str(cur, "Posisi Final"),
+        # Diagnostic untuk panel "Detail Indikator Market"
+        "last_close": _opt_float(cur, "Close"),
+        "rsi_last": _opt_float(cur, "RSI 14"),
+        "adx_last": _opt_float(cur, "ADX 14"),
+        "atr_last": _opt_float(cur, "ATR 14"),
+        "ema_fast_last": _opt_float(cur, "EMA 21"),
+        "ema_slow_last": _opt_float(cur, "EMA 50"),
+        "macd_last": _opt_float(cur, "MACD"),
+        "filter_reason": _filter_reason(cur),
         # Untuk informasi/debug
         "_target_dt": str(target_dt_utc),
-        "_close": float(cur["Close"]) if "Close" in cur and not pd.isna(cur["Close"]) else None,
+        "_close": _opt_float(cur, "Close"),
     }
 
-    missing = [k for k in ("Bar 1", "Bar 2", "SQZMOM 1 Value", "SQZMOM 2 Value") if setup.get(k) is None]
+    required = ("Bar 1", "Bar 2", "SQZMOM 1 Value", "SQZMOM 2 Value",
+                "Score", "Last TR", "Raw Position", "Final Position")
+    missing = [k for k in required if setup.get(k) is None]
     if missing:
         setup["error"] = f"Field tidak lengkap (warmup belum cukup?): {missing}"
     return setup
