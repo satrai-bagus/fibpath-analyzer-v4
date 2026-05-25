@@ -147,7 +147,7 @@ class FibPatternEngineV4:
         similarity_k: int = 10,
         numeric_weight_score: float = 5.0,
         numeric_weight_last_tr: float = 1.0,
-        numeric_weight_sqzmom: float = 1.0,
+        numeric_weight_sqzmom: float = 5.0,
         continuation_smoothing: float = 1.0,
     ) -> None:
         self.exact_count_smoothing = exact_count_smoothing
